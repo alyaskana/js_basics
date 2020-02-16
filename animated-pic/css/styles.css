@@ -1,0 +1,62 @@
+@import "reset.css";
+
+body {
+  overflow: hidden;
+}
+
+body * {
+  position: absolute;
+  cursor: pointer;
+}
+
+.box {
+  background-color: black;
+  width: 30vw;
+  height: 20vh;
+  transform: translate(8vw, 65vh) rotate(30deg);
+}
+
+.box2 {
+  background-color: blue;
+  width: 70vw;
+  height: 15vh;
+  transform: translate(15vw, 10vh) rotate(30deg);
+}
+
+.line {
+  background-color: navy;
+  width: 100vw;
+  height: 1vh;
+  transform: translate(30vw, 25vh) rotate(-40deg);
+}
+
+.line2 {
+  background-color: black;
+  width: 80vw;
+  height: 1vh;
+  transform: translate(15vw, 50vh) rotate(35deg);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 15vw solid transparent;
+  border-bottom: 22vw solid rgb(231, 220, 55);
+  border-left: 15vw solid transparent;
+  transform: translate(48vw, 50vh) rotate(-25deg);
+}
+
+.circle {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100%;
+  background-color: crimson;
+  transform: translate(30vw, 35vh);
+}
+.circle2 {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  background-color: crimson;
+  transform: translate(75vw, 10vh);
+}

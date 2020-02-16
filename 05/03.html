@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Анимируем по клику</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      transition: all 400ms ease;
+    }
+  </style>
+</head>
+<body>
+  <div onclick="reset()" class="box"></div>
+
+  <button onclick="paintItBlack()">Покрасить в черный</button>
+  <button onclick="makeCircle()">Сделать круглым</button>
+  <button onclick="moveRight()">Подвинуть вправо</button>
+  <button onclick="makeCrazy()">Сделать мигающим</button>
+
+
+  <input id="bgColorInput" type="text" 
+  placeholder="Напишите название текста на английском или в виде HEX-кода" size="70">
+  <button onclick="changeBgColor()">Сменить цвет</button> 
+
+  <input id="labelInput" type="text" 
+  placeholder="Напишите любое слово" size="70">
+  <button onclick="addText()">Добавить надпись</button> 
+
+
+  <script>
+    function reset() {
+      window.location.reload()
+    }
+
+    let box = document.querySelector(".box")
+    function paintItBlack() {
+      box.style.backgroundColor = "black"
+    }
+
+    function makeCircle() {
+      box.style.borderRadius = "150px"
+    }
+
+    function moveRight() {
+      box.style.transform = "translateX(500px)"
+    }
+
+    function makeCrazy() {
+      box.style.animation ()
+    }
+
+    function addText() {
+      let labelInput = document.getElementById("labelInput").value
+      box.innerText = labelInput.value
+      labelInput.value = ""
+    }
+    function changeBgColor() {
+      let bgColorInput = document.querySelector('#bgColorInput')
+      box.style.backgroundColor = bgColorInput.value
+      bgColorInput.value = ""
+    }
+  </script>
+</body> 
+</html>

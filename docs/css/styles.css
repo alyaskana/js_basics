@@ -9,28 +9,31 @@ body * {
   cursor: pointer;
 }
 
-.box {
+.box-black {
   background-color: black;
   width: 30vw;
   height: 20vh;
-  transform: translate(8vw, 65vh) rotate(30deg);
+  /* transform: translate(8vw, 65vh) rotate(30deg); */
+  left: 8vw;
+  top: 65vh;
+  transform: rotate(30deg);
 }
 
-.box2 {
+.box-blue {
   background-color: blue;
   width: 70vw;
   height: 15vh;
   transform: translate(15vw, 10vh) rotate(30deg);
 }
 
-.line {
+.line-navy {
   background-color: navy;
   width: 100vw;
   height: 1vh;
   transform: translate(30vw, 25vh) rotate(-40deg);
 }
 
-.line2 {
+.line-black {
   background-color: black;
   width: 80vw;
   height: 1vh;
@@ -46,14 +49,14 @@ body * {
   transform: translate(48vw, 50vh) rotate(-25deg);
 }
 
-.circle {
+.circle-small {
   width: 15vw;
   height: 15vw;
   border-radius: 100%;
   background-color: crimson;
   transform: translate(30vw, 35vh);
 }
-.circle2 {
+.circle-big {
   width: 20vw;
   height: 20vw;
   border-radius: 100%;

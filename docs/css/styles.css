@@ -1,17 +1,16 @@
 @import "reset.css";
 
 body {
-  /* overflow: hidden; */
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
 body * {
-  /* position: absolute; */
+  position: absolute;
   cursor: pointer;
 }
 
 .box-black {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   width: 30vw;
   height: 20vh;
   /* transform: translate(8vw, 65vh) rotate(30deg); */
@@ -21,24 +20,21 @@ body * {
 }
 
 .box-blue {
-  background-color: rgb(0, 0, 255);
+  background-color: blue;
   width: 70vw;
   height: 15vh;
   transform: translate(15vw, 10vh) rotate(30deg);
 }
 
 .line-navy {
-  background-color: rgb(0, 0, 128);
+  background-color: navy;
   width: 100vw;
   height: 1vh;
-  /* transform: translate(30vw, 25vh) rotate(-40deg); */
-  left: 30vw;
-  top: 25vh;
-  transform: rotate(-40deg);
+  transform: translate(30vw, 25vh) rotate(-40deg);
 }
 
 .line-black {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   width: 80vw;
   height: 1vh;
   transform: translate(15vw, 50vh) rotate(35deg);
@@ -57,24 +53,13 @@ body * {
   width: 15vw;
   height: 15vw;
   border-radius: 100%;
-  background-color: rgb(220, 20, 60);
+  background-color: crimson;
   transform: translate(30vw, 35vh);
 }
 .circle-big {
   width: 20vw;
   height: 20vw;
   border-radius: 100%;
-  background-color: rgb(220, 20, 60);
+  background-color: crimson;
   transform: translate(75vw, 10vh);
-}
-
-/* ================ */
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  font-family: sans-serif;
-  font-size: 30px;
 }
